@@ -111,6 +111,7 @@ func main() {
 	diskConfig := viper.GetStringMapString("disk")
 	sysStat := SysStats{}
 	diskStatStr, err := sysStat.GetDiskStat(diskConfig["path"])
+	fmt.Println(diskStatStr)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -129,7 +130,6 @@ func main() {
 			Subject: subject,
 			Body:    body,
 		}
-		fmt.Println(request)
 		// Create authentication
 		auth := smtp.PlainAuth("", from, password, smtpHost)
 
