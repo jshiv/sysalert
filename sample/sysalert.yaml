@@ -1,0 +1,9 @@
+smtp:
+  from: fromAddress@gmail.com
+  password: fromPassword
+  to: toAddress@gmail.com
+  host: smtp.gmail.com
+  port: 587
+disk:
+  path: /
+  pct: 25
