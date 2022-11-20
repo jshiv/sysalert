@@ -105,8 +105,8 @@ func main() {
 	smtpHost := smtpConfig["host"]
 	smtpPort := smtpConfig["port"]
 
-	usage := printUsage()
-	fmt.Println(usage)
+	// usage := printUsage()
+	// fmt.Println(usage)
 
 	diskConfig := viper.GetStringMapString("disk")
 	sysStat := SysStats{}
